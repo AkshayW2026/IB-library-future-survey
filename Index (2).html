@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Global Survey: The Future of IB and International School Libraries in the Age of AI</title>
+<style>
+:root{--bg:#f5f2ea;--card:#fff;--ink:#1c2830;--mute:#667781;--line:#ddd8ca;--acc:#16605a;--acc2:#e3f0ed;--hi:#f2c14e;--warn:#b3402a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12181c;--card:#1b242a;--ink:#e9eef0;--mute:#9aa9b2;--line:#33414a;--acc:#6cc3ba;--acc2:#1d3431;--warn:#ff8f78}}
+:root[data-theme="dark"]{--bg:#12181c;--card:#1b242a;--ink:#e9eef0;--mute:#9aa9b2;--line:#33414a;--acc:#6cc3ba;--acc2:#1d3431;--warn:#ff8f78}
+html{scroll-padding-top:90px}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 16px 8px;border-bottom:1px solid var(--line)}
+.top .in{max-width:780px;margin:auto}.top .m{display:flex;justify-content:space-between;font-size:13px;color:var(--mute);margin-bottom:6px}
+.seg{display:flex;gap:4px}.seg i{flex:1;height:6px;border-radius:3px;background:var(--line);cursor:default}.seg i.d{background:var(--acc);opacity:.45;cursor:pointer}.seg i.c{background:var(--acc);opacity:1}
+main{max-width:780px;margin:0 auto;padding:18px 14px 70px}
+.hero{padding:18px 4px 8px}.hero small{color:var(--acc);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:12px}
+.hero h1{font:700 clamp(1.7rem,5vw,2.4rem)/1.15 Georgia,serif;margin:8px 0 10px}.hero h1 mark{background:linear-gradient(transparent 55%,var(--hi) 55%);color:inherit}
+.hero p{color:var(--mute);margin:0 0 6px}
+.st{animation:up .35s ease both}@keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.st{animation:none}}
+h2{font:700 1.35rem Georgia,serif;margin:18px 0 2px}.sub{color:var(--mute);font-size:14px;margin:0 0 6px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0;transition:.2s}
+.q.err{border-color:var(--warn);box-shadow:0 0 0 1px var(--warn)}.q.x{border-style:dashed}
+.q>.l{font-weight:650;margin-bottom:2px}.q>.l em{font-style:normal;color:var(--warn)}.q>.l small{color:var(--acc);font-weight:600;margin-left:6px}
+.n{font-size:13px;color:var(--mute);margin-bottom:8px}.em{display:none;color:var(--warn);font-size:13px;margin-top:6px}.q.err .em{display:block}
+.ch{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.c{border:1.5px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-size:14.5px;cursor:pointer;transition:.15s;position:relative}
+.c:hover{border-color:var(--acc)}.c.on{background:var(--acc);border-color:var(--acc);color:#fff}.c.on b{background:#fff;color:var(--acc);border-radius:50%;display:inline-block;width:20px;height:20px;line-height:20px;font-size:12px;text-align:center;margin-right:6px}
+.c:disabled{opacity:.4;cursor:not-allowed}
+select,input[type=text],input[type=email],textarea{width:100%;font:inherit;padding:11px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);margin-top:8px}
+textarea{min-height:110px;resize:vertical}.cnt{font-size:12px;color:var(--mute);text-align:right}
+.g{margin-top:6px}.gr{padding:10px 0;border-bottom:1px solid var(--line)}.gr:last-child{border:0}.gr.err .t{color:var(--warn);font-weight:600}
+.gr .t{font-size:15px;margin-bottom:6px}.sg{display:flex;gap:6px}.sg button{flex:1;padding:9px 0;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);border-radius:9px;font:inherit;cursor:pointer;transition:.15s}
+.sg button:hover{border-color:var(--acc)}.sg button.on{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:700}
+.ends{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-top:4px}
+.ins{background:var(--acc2);border-radius:14px;padding:14px 18px;margin:12px 0;font-size:14.5px}.ins b{color:var(--acc)}
+.mt{height:10px;background:var(--line);border-radius:5px;overflow:hidden;margin:8px 0 4px}.mt i{display:block;height:100%;background:var(--acc);transition:width .4s}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:22px}
+.btn{font:600 15px system-ui,sans-serif;background:var(--acc);color:var(--bg);border:0;border-radius:11px;padding:13px 26px;cursor:pointer}
+.btn.s{background:transparent;color:var(--acc);border:1.5px solid var(--acc)}.btn:disabled{opacity:.5}
+.rv{display:flex;gap:10px;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}.rv span:first-child{color:var(--mute);flex:0 0 45%}.rv a{color:var(--acc);cursor:pointer;font-size:12px;margin-left:6px}
+.hide{display:none!important}.note{font-size:13px;color:var(--mute)}
+.res .bw{display:flex;gap:8px;font-size:13px;margin:3px 0}.res .bw span:first-child{flex:0 0 42%}
+.res blockquote{margin:6px 0;padding:6px 12px;border-left:3px solid var(--acc);background:var(--bg);font-size:14px}
+</style></head><body>
+<div class="top"><div class="in"><div class="m"><span id="sl">Step 1 of 8</span><span><a id="ad" class="hide" style="cursor:pointer;color:var(--acc);font-weight:600;margin-right:10px">View results</a><span id="sp"></span></span></div><div class="seg" id="seg"></div></div></div>
+<main id="app"></main>
+<script>
+const $=(t,a={},...k)=>{const e=document.createElement(t);for(const[n,v]of Object.entries(a)){n==="class"?e.className=v:n==="text"?e.textContent=v:e.setAttribute(n,v)}k.flat().forEach(c=>c!=null&&e.append(c));return e};
+const LIK=["Very Unconfident","Unconfident","Neutral","Confident","Very Confident"];
+const LIBR=["Teacher Librarian","Head Librarian / Library Coordinator"];
+const Q=[
+{id:"q1",s:0,x:"What is your current role?",ty:"s",o:["Teacher Librarian","Head Librarian / Library Coordinator","MYP Coordinator","DP Coordinator","CP Coordinator","ATL Coordinator","Curriculum Leader","Teacher","School Leader","Other (please specify)"],oth:1},
+{id:"q2",s:0,x:"What type of school do you work in?",ty:"s",o:["IB World School","IB Candidate School","International School","IB + National Curriculum School","Other"],oth:1},
+{id:"q3",s:0,x:"Which IB programmes does your school offer?",n:"Select all that apply.",ty:"m",o:["PYP","MYP","DP","CP"]},
+{id:"q4",s:0,x:"In which region is your school located?",ty:"s",o:["Africa","Asia-Pacific","Europe","Middle East","North America","Latin America","Other"],oth:1},
+{id:"q5",s:0,x:"Approximately how many students are enrolled in your school?",ty:"s",o:["Under 500","500-1000","1001-2000","More than 2000"]},
+{id:"f1",s:0,x:"How many people work in your library (full-time equivalent)?",ty:"s",o:["Just me","2","3–4","5 or more"],opt:1,fu:1,show:a=>LIBR.includes(a.q1)},
+{id:"f2",s:0,x:"How often do you work with the library on research skills or AI literacy?",ty:"s",o:["Never","Occasionally","Every term","Monthly","Weekly"],opt:1,fu:1,show:a=>a.q1&&!LIBR.includes(a.q1)},
+{id:"q6",s:1,x:"To what extent are the following currently a challenge in your school library?",n:"Tap a number: 1 = Not a challenge … 5 = Major challenge",ty:"g",c:["1","2","3","4","5"],lo:"Not a challenge",hi:"Major challenge",r:["AI-generated student work","Academic integrity concerns","Student misinformation","Digital literacy gaps","Media literacy challenges","Declining reading engagement","Low usage of library databases","Budget constraints","Demonstrating library impact","Supporting student wellbeing","Maintaining diverse collections","Staff AI literacy"]},
+{id:"f3",s:1,x:"Why do you think library databases are under-used?",n:"Select all that apply.",ty:"m",o:["Students default to Google or AI tools","Low awareness","Hard to search","Teachers don’t point students to them","Cost or limited access","Not built into assignments"],opt:1,fu:1,show:a=>a.q6&&+a.q6["Low usage of library databases"]>=4},
+{id:"q7",s:2,x:"How significant do you believe the following challenges will become by 2030?",n:"Tap a number: 1 = Not significant … 5 = Extremely significant",ty:"g",c:["1","2","3","4","5"],lo:"Not significant",hi:"Extremely significant",r:["Ethical use of AI","AI-assisted plagiarism","Verification of information","Deepfakes and misinformation","Digital citizenship","Data literacy","Reading engagement","Budget pressures","Evolving librarian roles","Keeping pace with technology"]},
+{id:"q8",s:3,x:"Does your school currently have any of the following?",ty:"g",c:["Yes","No"],r:["AI Policy","AI Guidelines for Students","AI Guidelines for Teachers","AI Citation Guidance","Academic Integrity Policy addressing AI","Staff AI Professional Development","Student AI Literacy Programme"]},
+{id:"f4",s:3,x:"What is the main barrier to staff AI training or a student AI literacy programme?",n:"Select all that apply.",ty:"m",o:["Time","Budget","Expertise","Leadership buy-in","Unclear guidance","Other"],opt:1,fu:1,show:a=>a.q8&&(a.q8["Staff AI Professional Development"]==="No"||a.q8["Student AI Literacy Programme"]==="No")},
+{id:"q9",s:3,x:"How confident are teachers in your school in using AI responsibly?",ty:"s",o:LIK},
+{id:"q10",s:3,x:"How confident are students in evaluating AI-generated information?",ty:"s",o:LIK},
+{id:"q11",s:4,x:"What do you see as the three most important roles of school librarians by 2030?",n:"Select up to THREE. The order you tap is your ranking.",ty:"m",max:3,rank:1,o:["Research Skills Specialist","AI Literacy Specialist","Academic Integrity Leader","Digital Citizenship Educator","Information Literacy Specialist","Reading Advocate","Curriculum Partner","Data Literacy Educator","Technology Integration Coach","Student Wellbeing Supporter","Learning Commons Manager","Professional Learning Facilitator"]},
+{id:"q12",s:4,x:"Which area should receive the highest priority in international school libraries over the next five years?",ty:"s",o:["Reading and Literature","AI Literacy","Research Skills","Academic Integrity","Digital Citizenship","Information Literacy","Student Wellbeing","Technology Integration"]},
+{id:"q13",s:5,x:"How important is it for schools to implement a structured, whole-school approach to Research Skills, AI Literacy, Academic Integrity, and Digital Citizenship?",ty:"s",o:["Not Important","Slightly Important","Moderately Important","Important","Extremely Important"]},
+{id:"q14",s:5,x:"Which student competencies are most critical for success in the AI era?",n:"Select up to FIVE.",ty:"m",max:5,o:["Critical Thinking","Source Evaluation","Ethical AI Use","Academic Writing","Referencing and Citation","Information Literacy","Research Skills","Media Literacy","Problem Solving","Reflection and Metacognition","Data Literacy","Digital Citizenship"]},
+{id:"q15",s:5,x:"In which areas would you most value professional learning?",n:"Select up to THREE.",ty:"m",max:3,o:["AI Literacy","Prompt Engineering","Academic Integrity","Research Skills Instruction","ATL Skills Development","Information Literacy","Data Literacy","Media Literacy","Digital Citizenship","Reading Promotion","Collection Development"]},
+{id:"q16",s:6,x:"What is the single biggest challenge facing your library today?",ty:"t",opt:1},
+{id:"q17",s:6,x:"What do you believe will be the biggest challenge facing school libraries by 2030?",ty:"t",opt:1},
+{id:"q18",s:6,x:"What support do school librarians need most from school leadership?",ty:"t",opt:1},
+{id:"q19",s:6,x:"What support would you like to receive from IB, professional organizations, or library associations?",ty:"t",opt:1},
+{id:"q20",s:6,x:"Is there anything else you would like to share about the future of school libraries?",ty:"t",opt:1},
+{id:"q21",s:7,x:"If a global report on “The Future of IB and International School Libraries” becomes available, would you like to receive a copy?",ty:"s",o:["Yes","No"],opt:1}
+];
+const STEPS=[["About you","Tell us a little about your context."],["Challenges today","How things look in your library in 2026."],["Looking ahead to 2030","What do you think will matter most?"],["AI readiness","Where your school stands right now."],["The future role of libraries","What should librarians focus on?"],["Skills and learning","Competencies and professional learning."],["In your words","Optional, but this is where the best insights come from."],["Review and send","Check your answers, then submit."]];
+const QI=Object.fromEntries(Q.map(q=>[q.id,q]));
+let A={},step=0,maxS=0,db=null,dl=null,isAdmin=false,done=false;
+const ENDPOINT=""; // optional: Google Apps Script URL when self-hosted (not usable on the claude.ai page)
+const app=$("div");document.getElementById("app")?.append(app);
+const vis=q=>!q.show||q.show(A);
+const save=()=>{try{localStorage.setItem("ibls",JSON.stringify({A,step,maxS}))}catch(e){}};
+try{const d=JSON.parse(localStorage.getItem("ibls")||"null");if(d){A=d.A||{};step=d.step||0;maxS=d.maxS||0}}catch(e){}
+function otherOn(q){const v=A[q.id];const last=q.o&&q.o[q.o.length-1];return q.oth&&(Array.isArray(v)?v.includes(last):v===last)}
+function qEl(q){
+ const d=$("div",{class:"q"+(q.fu?" x":""),id:"w"+q.id});
+ d.append($("div",{class:"l"},q.x,q.opt?null:$("em",{text:" *"}),q.fu?$("small",{text:"Follow-up"}):null));
+ if(q.n)d.append($("div",{class:"n",text:q.n}));
+ if(q.ty==="s"&&q.o.length>6){const s=$("select",{},$("option",{value:"",text:"Choose…"}),q.o.map(o=>$("option",{value:o,text:o})));s.value=A[q.id]||"";s.onchange=()=>{A[q.id]=s.value;upd(q)};d.append(s)}
+ else if(q.ty==="s"||q.ty==="m"){
+  const m=q.ty==="m",cur=A[q.id]||(m?[]:null),full=m&&q.max&&cur.length>=q.max;
+  d.append($("div",{class:"ch"},q.o.map(o=>{const i=m?cur.indexOf(o):(cur===o?0:-1);
+   const b=$("button",{class:"c"+(i>=0?" on":""),type:"button"},(q.rank&&i>=0)?$("b",{text:i+1}):null,o);
+   if(full&&i<0)b.disabled=true;
+   b.onclick=()=>{if(m){const a=(A[q.id]||[]).slice();const j=a.indexOf(o);j>=0?a.splice(j,1):a.push(o);A[q.id]=a}else A[q.id]=(A[q.id]===o&&q.opt)?null:o;upd(q)};return b})));
+  if(m&&q.max)d.append($("div",{class:"n",style:"margin:6px 0 0",text:cur.length+" of "+q.max+" selected"}));
+ }else if(q.ty==="g"){
+  const v=A[q.id]||{};
+  const g=$("div",{class:"g"},q.r.map(r=>$("div",{class:"gr","data-r":r},$("div",{class:"t",text:r}),$("div",{class:"sg"},q.c.map(c=>{const b=$("button",{class:v[r]===c?"on":"",type:"button","aria-label":r+": "+c,text:c});b.onclick=()=>{(A[q.id]=A[q.id]||{})[r]=c;upd(q)};return b})),q.lo?$("div",{class:"ends"},$("span",{text:q.lo}),$("span",{text:q.hi})):null)));
+  d.append(g);
+ }else{
+  const t=$("textarea",{placeholder:q.id==="q16"&&A.q12?"Think about how this connects to “"+A.q12+"”, or share something else entirely…":"Type your response…"});t.value=A[q.id]||"";
+  const c=$("div",{class:"cnt",text:t.value.length+" characters"});t.oninput=()=>{A[q.id]=t.value;c.textContent=t.value.length+" characters";save()};d.append(t,c);
+ }
+ if(otherOn(q)){const o=$("input",{type:"text",placeholder:"Please specify"});o.value=A[q.id+"_o"]||"";o.oninput=()=>{A[q.id+"_o"]=o.value;save()};d.append(o)}
+ d.append($("div",{class:"em",text:"Please answer this question."}));return d;
+}
+function upd(q){
+ save();const old=document.getElementById("w"+q.id);if(old){const n=qEl(q);old.replaceWith(n)}
+ Q.filter(x=>x.s===step&&x.show).forEach(x=>{const e=document.getElementById("w"+x.id);const v=vis(x);if(!v)delete A[x.id];e&&e.classList.toggle("hide",!v)});
+ const ins=document.getElementById("ins");if(ins)ins.replaceWith(insight());
+ if(q.id==="q12"){const t=document.querySelector("#wq16 textarea");if(t)t.placeholder=A.q12?"Think about how this connects to “"+A.q12+"”…":"Type your response…"}
+}
+const topN=(id,min,n)=>{const v=A[id]||{};return Object.entries(v).filter(([k,x])=>+x>=min).sort((a,b)=>b[1]-a[1]).slice(0,n).map(x=>x[0])};
+const yes=()=>Object.values(A.q8||{}).filter(x=>x==="Yes").length;
+function insight(){
+ const d=$("div",{id:"ins"});
+ if(step===1){const t=topN("q6",4,3);if(t.length)d.className="ins",d.append($("b",{text:"Your biggest challenges so far: "}),t.join(", ")+".")}
+ if(step===2){const t=topN("q7",4,3);if(t.length)d.className="ins",d.append($("b",{text:"What worries you most for 2030: "}),t.join(", ")+".")}
+ if(step===3&&A.q8&&Object.keys(A.q8).length){const y=yes();d.className="ins";d.append($("b",{text:"AI readiness: "+y+" of 7 in place"}),$("div",{class:"mt"},$("i",{style:"width:"+(100*y/7)+"%"})),y<3?"There’s plenty of room to build.":y<6?"You’ve made a good start.":"Your school is well prepared.")}
+ return d;
+}
+function ok(q){if(q.opt||!vis(q))return true;const v=A[q.id];if(q.ty==="g")return v&&q.r.every(r=>v[r]);if(q.ty==="m")return v&&v.length;return !!v}
+function render(){
+ app.replaceChildren();const [t,s]=STEPS[step];
+ document.getElementById("sl").textContent="Step "+(step+1)+" of "+STEPS.length;document.getElementById("sp").textContent=t;
+ const sg=document.getElementById("seg");sg.replaceChildren(...STEPS.map((_,i)=>{const e=$("i",{class:i===step?"c":i<=maxS?"d":""});if(i<=maxS&&i!==step)e.onclick=()=>go(i);return e}));
+ const w=$("div",{class:"st"});
+ if(step===0)w.append($("div",{class:"hero"},$("small",{text:"Global survey · 8–10 minutes"}),$("h1",{},"The future of ",$("mark",{text:"IB and international school libraries"})," in the age of AI"),$("p",{text:"This survey explores the challenges facing IB and international school libraries in an era of artificial intelligence, digital transformation, changing research practices and evolving student needs."}),$("p",{text:"Questions change based on your answers, so you only see what’s relevant. Responses are used for research and professional learning; individual schools and respondents will not be identified."})));
+ w.append($("h2",{text:t}),$("p",{class:"sub",text:s+(step<6?" Questions marked * are required.":"")}));
+ if(step<7){Q.filter(q=>q.s===step&&q.id!=="q21").forEach(q=>{const e=qEl(q);if(!vis(q))e.classList.add("hide");w.append(e)});w.append(insight())}
+ else review(w);
+ const nav=$("div",{class:"nav"},$("button",{class:"btn s",type:"button",text:"Back",style:step?"":"visibility:hidden"}),$("button",{class:"btn",id:"nx",type:"button",text:step===7?"Submit survey":"Next"}));
+ nav.firstChild.onclick=()=>go(step-1);nav.lastChild.onclick=next;w.append(nav,$("p",{class:"note",id:"msg",style:"text-align:center"}));
+ w.append($("p",{class:"note",style:"text-align:center",text:"Your progress is saved on this device as you go."}));
+ app.append(w);
+}
+function go(i){step=i;maxS=Math.max(maxS,i);save();render();window.scrollTo({top:0,behavior:"smooth"})}
+function next(){
+ if(step===7)return submit();
+ let first=null;
+ Q.filter(q=>q.s===step).forEach(q=>{const e=document.getElementById("w"+q.id);const good=ok(q);e.classList.toggle("err",!good);
+  if(q.ty==="g"&&A[q.id]!==undefined||q.ty==="g")e.querySelectorAll(".gr").forEach(r=>r.classList.toggle("err",!good&&!(A[q.id]&&A[q.id][r.dataset.r])));
+  if(!good&&!first)first=e});
+ if(first){first.scrollIntoView({behavior:"smooth",block:"center"});document.getElementById("msg").textContent="Please complete the highlighted question"+"(s) to continue.";return}
+ go(step+1);
+}
+const fmt=v=>v==null?"":typeof v==="string"?v:Array.isArray(v)?v.join("; "):Object.entries(v).map(([k,x])=>k+" = "+x).join("; ");
+const ans=q=>{let v=fmt(A[q.id]);if(otherOn(q)&&A[q.id+"_o"])v+=" ("+A[q.id+"_o"]+")";return v};
+function review(w){
+ Q.filter(q=>q.id!=="q21"&&vis(q)&&A[q.id]!=null&&A[q.id]!==""&&ans(q)).forEach(q=>{const a=$("a",{text:"Edit"});a.onclick=()=>go(q.s);w.append($("div",{class:"rv"},$("span",{text:q.x}),$("span",{style:"text-align:right"},ans(q).slice(0,160),a)))});
+ const c=$("div",{class:"q",style:"margin-top:18px"},$("div",{class:"l",text:QI.q21.x}),$("div",{class:"n",text:"Optional. Contact details are stored separately from your answers."}));
+ const ch=$("div",{class:"ch"},["Yes","No"].map(o=>{const b=$("button",{class:"c"+(A.q21===o?" on":""),type:"button",text:o});b.onclick=()=>{A.q21=o;save();render()};return b}));c.append(ch);
+ if(A.q21==="Yes"){const n=$("input",{type:"text",placeholder:"Name"}),e=$("input",{type:"email",placeholder:"Email"});n.value=A.cn||"";e.value=A.ce||"";n.oninput=()=>{A.cn=n.value;save()};e.oninput=()=>{A.ce=e.value;save()};c.append(n,e)}
+ w.append(c);
+}
+function csv(){return [["Question","Answer"]].concat(Q.filter(q=>vis(q)).map(q=>[q.x,ans(q)])).map(r=>r.map(c=>'"'+String(c).replace(/"/g,'""')+'"').join(",")).join("\n")}
+async function saveCopy(){if(!dl)return;try{await dl.save({filename:"ib-library-survey-my-answers.csv",data:csv()})}catch(e){}}
+async function submit(){
+ const m=document.getElementById("msg");
+ if(A.q21==="Yes"&&!(A.ce||"").trim()){m.textContent="Please add an email address, or choose No.";return}
+ const b=document.getElementById("nx");b.disabled=true;b.textContent="Connecting…";
+ const a={};Q.forEach(q=>{if(q.id!=="q21"&&vis(q)&&A[q.id]!=null&&A[q.id]!=="")a[q.id]=A[q.id];if(A[q.id+"_o"])a[q.id+"_o"]=A[q.id+"_o"]});
+ const rec={submittedAt:new Date().toISOString(),answers:a,wantsReport:A.q21||null};
+ let stored=false;
+ if(ENDPOINT){try{await fetch(ENDPOINT,{method:"POST",mode:"no-cors",body:JSON.stringify({...rec,contact:A.q21==="Yes"?{name:A.cn,email:A.ce}:null})});stored=true}catch(e){}}
+ else if(db){try{const u=await claude.use("user");const id=await u.id();await db.collection("responses").doc(id).set(rec);if(A.q21==="Yes")await db.collection("contacts").doc(id).set({name:A.cn||"",email:A.ce||""});stored=true}catch(e){}}
+ done=true;try{localStorage.removeItem("ibls")}catch(e){}
+ const t=topN("q6",4,3),y=yes();
+ app.replaceChildren($("div",{class:"st"},$("div",{class:"hero"},$("small",{text:stored?"Response recorded":"One last step"}),$("h1",{},stored?"Thank you for shaping the ":"Please save your ",$("mark",{text:stored?"future of libraries":"answers"})),$("p",{text:stored?"Your insights will help shape the future of IB and international school libraries.":"We couldn’t record your response automatically in this view. Please save a copy and send it to the survey organiser."})),
+  $("div",{class:"ins"},$("b",{text:"Your snapshot"}),$("div",{text:"AI readiness: "+y+" of 7 in place."}),$("div",{text:t.length?"Top current challenges: "+t.join(", ")+".":"No challenge rated 4 or above."}),A.q11&&A.q11.length?$("div",{text:"Roles you ranked highest: "+A.q11.join(", ")+"."}):null),
+  dl?$("button",{class:"btn s",type:"button",text:"Save a copy of my answers",onclick:"void 0"}):null));
+ const sb=app.querySelector("button");if(sb)sb.onclick=saveCopy;
+ document.getElementById("seg").replaceChildren(...STEPS.map(()=>$("i",{class:"c"})));document.getElementById("sl").textContent="Complete";document.getElementById("sp").textContent="";
+ window.scrollTo(0,0);
+}
+async function results(){
+ const ds=(await db.collection("responses").get()).docs.map(d=>d.data());let nc=0;try{nc=(await db.collection("contacts").get()).size}catch(e){}
+ const r=$("div",{class:"res"},$("h2",{text:"Results: "+ds.length+" response"+(ds.length===1?"":"s")}));
+ Q.filter(q=>q.id!=="q21").forEach(q=>{const box=$("div",{class:"q"},$("div",{class:"l",text:q.x}));const vs=ds.map(d=>d.answers&&d.answers[q.id]).filter(v=>v!=null);
+  if(q.ty==="t")vs.forEach(v=>box.append($("blockquote",{text:v})));
+  else if(q.ty==="g")q.r.forEach(row=>{const xs=vs.map(v=>v[row]).filter(Boolean);const avg=q.c[0]==="1"?"avg "+(xs.reduce((s,x)=>s+ +x,0)/(xs.length||1)).toFixed(2)+" · ":"";box.append($("div",{class:"bw"},$("span",{text:row}),$("span",{text:avg+q.c.map(c=>c+": "+xs.filter(x=>x===c).length).join("  ")})))});
+  else{const t={};vs.forEach(v=>(Array.isArray(v)?v:[v]).forEach(x=>t[x]=(t[x]||0)+1));q.o.forEach(o=>box.append($("div",{class:"bw"},$("span",{text:o}),$("span",{text:String(t[o]||0)}))))}
+  r.append(box)});
+ const b=$("button",{class:"btn",type:"button",text:"Download all responses (CSV)"});
+ b.onclick=()=>{const H=["Submitted","Wants report"].concat(Q.filter(q=>q.id!=="q21").map(q=>q.x));const rows=ds.map(d=>[d.submittedAt,d.wantsReport||""].concat(Q.filter(q=>q.id!=="q21").map(q=>fmt(d.answers[q.id]))));
+  dl&&dl.save({filename:"ib-library-survey-responses.csv",data:[H].concat(rows).map(r=>r.map(c=>'"'+String(c).replace(/"/g,'""')+'"').join(",")).join("\n")}).catch(()=>{})};
+ r.append(b,$("p",{class:"note",text:nc+" report request(s) with contact details stored separately."}));app.replaceChildren(r);window.scrollTo(0,0);
+}
+render();
+(async()=>{
+ try{dl=await claude.use("downloads")}catch(e){}
+ try{db=await claude.use("db")}catch(e){}
+ try{const u=await claude.use("user");isAdmin=u?await u.canEdit():false}catch(e){}
+ if(db&&isAdmin&&!done){const a=document.getElementById("ad");a.classList.remove("hide");a.onclick=()=>results().catch(()=>{a.textContent="Couldn’t load results"})}
+})();
+</script></body></html>
